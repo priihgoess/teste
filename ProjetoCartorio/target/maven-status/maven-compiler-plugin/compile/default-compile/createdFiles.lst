@@ -1,0 +1,7 @@
+br\com\qintess\salao\security\WebsecurityConfiguracao.class
+br\com\qintess\salao\controllers\IndexController.class
+br\com\qintess\salao\controllers\UsuarioController.class
+br\com\qintess\salao\repositorios\AgendaRepositorio.class
+br\com\qintess\salao\repositorios\UsuarioRepositorio.class
+br\com\qintess\salao\models\Usuario.class
+br\com\qintess\salao\ProjetoSalaoApplication.class

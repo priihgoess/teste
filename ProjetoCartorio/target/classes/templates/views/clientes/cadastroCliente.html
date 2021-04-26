@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/leyout">
+
+<head >
+<link rel="icon" href="data:,">
+<meta charset="UTF-8">
+
+<title>Usuario</title>
+
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet" />
+<!--Import materialize.css-->
+<link type="text/css" rel="stylesheet"
+	href="../../materialize/css/materialize.min.css" media="screen,projection" />
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+<body>
+<nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo right">Cartorios</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="/cadastrarCartorio">Cadastrar cartorios</a></li>
+        <li><a href="/cartorio" >Lista de cartórios</a></li>
+        <li><a href="clientes/cadastroCliente" >Cadastrar Clientes</a></li>
+        <li><a href="/listaClientes" >Lista de Clientes</a></li>
+          <li><a href="/" >Retornar Inicio</a></li>
+        
+      </ul>
+    </div>
+  </nav>
+	<h1>Usuario :</h1>
+
+	<form class="container" method="post">
+		        Nome:<input type="text" value="" name="nome" />
+		    <div class="row">
+			<div class="input field col s6">
+				Documento:<input type="number" value="" name="documento" />
+			</div>
+			<div class="input field col s3">
+				Enderenço:<input type="text" value="" name="Enderenço" />
+			</div>
+			<div class="input field col s6">
+				Telefone:<input type="number" value="" name="Telefone" />
+			</div>
+			<div class="input field col s3">
+				Longin:<input type="text" value="" name="longin" />
+			</div>
+			<div class="input field col s3">
+				Senha :<input type="password" value=""
+					name="senha" />
+			</div>
+			
+		</div>
+		<button class="waves-effect waves-light btn" type="submit">Salvar </button>
+
+	</form>
+	<!--JavaScript at end of body for optimized loading-->
+	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+</body>
+</html>

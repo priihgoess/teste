@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/leyout">
+
+<head>
+<link rel="icon" href="data:,">
+<meta charset="UTF-8">
+
+<title>Lista de Cartorios</title>
+
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet" />
+<!--Import materialize.css-->
+
+<link type="text/css" rel="stylesheet"
+	href="../../materialize/css/materialize.min.css" media="screen,projection" />
+
+<!--Let browser know website is optimized for mobile-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<body>
+<nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo right">Cartorios</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="/cadastrarCartorio">Cadastrar cartorios</a></li>
+        <li><a href="/cartorio" >Lista de cartórios</a></li>
+        <li><a href="clientes/cadastroCliente" >Cadastrar Clientes</a></li>
+        <li><a href="/listaClientes" >Lista de Clientes</a></li>
+          <li><a href="/" >Retornar Inicio</a></li>
+        
+      </ul>
+    </div>
+  </nav>
+	<h1>Lista de cartorios</h1>
+
+	<table class="container">
+		<thead>
+			<tr>
+				<th>Nome</th>
+				<th>Certidões que cartório emite</th>
+				<th>Endereço</th>
+				<th>telefone</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr th:each="cartorios : ${cartorios}">
+				<div class="row">
+
+					<td><span
+							th:text="${cartorios.nome}"></span></td>
+						<td><span th:text="${cartorios.certidoes}"></span></td>
+					<td><span th:text="${cartorios.endereco}"></span></td>
+					<td><span th:text="${cartorios.telefone}"></span></td>
+			</tr>
+		</tbody>
+
+	</table>
+	<!--JavaScript at end of body for optimized loading-->
+	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+</body>
+</html>
